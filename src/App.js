@@ -10,6 +10,10 @@ function App() {
     { rowNumber: 4, rowDescription: 'Charge phone battery', rowAssigned: 'Alexa' },
   ]
 
+  const addTodo = () => {
+    console.log('Our addTodo btn has been clicked! ');
+  }
+
   return (
     <div className='mt-5 container'>
       <div className='card'>
@@ -19,6 +23,9 @@ function App() {
         <div className='card-body'>
 
           <TodoTable todos={todos}/>
+          <button className='btn btn-primary' onClick={addTodo}>
+            Add new todo
+          </button>
 
         </div>
       </div>
