@@ -12,23 +12,13 @@ function TodoTable(propz) {
                 </tr>
             </thead>
             <tbody>
-
-                <TodoRowItem 
-                    rowNumber={propz.todos[0].rowNumber} 
-                    rowDescription={propz.todos[0].rowDescription} 
-                    rowAssigned={propz.todos[0].rowAssigned} 
-                />
-                <TodoRowItem 
-                    rowNumber={propz.todos[1].rowNumber} 
-                    rowDescription={propz.todos[1].rowDescription} 
-                    rowAssigned={propz.todos[1].rowAssigned} 
-                />
-                <TodoRowItem 
-                    rowNumber={propz.todos[2].rowNumber} 
-                    rowDescription={propz.todos[2].rowDescription} 
-                    rowAssigned={propz.todos[2].rowAssigned} 
-                />
-
+                {propz.todos.map(todo => (
+                    <TodoRowItem
+                        rowNumber={todo.rowNumber}
+                        rowDescription={todo.rowDescription}
+                        rowAssigned={todo.rowAssigned}
+                    />
+                ))}
             </tbody>
         </table>
     )
