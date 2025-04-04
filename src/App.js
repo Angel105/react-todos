@@ -11,7 +11,15 @@ function App() {
   ]
 
   const addTodo = () => {
-    console.log('Our addTodo btn has been clicked! ');
+    if (todos.length > 0) {
+      const newTodo = {
+        rowNumber: todos.length + 1,
+        rowDescription: 'New Todo',
+        rowAssigned: 'User name'
+      }
+      todos.push(newTodo);
+    }
+    console.log(todos);
   }
 
   return (
