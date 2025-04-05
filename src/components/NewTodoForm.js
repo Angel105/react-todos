@@ -8,6 +8,8 @@ function NewTodoForm(propz) {
     const submitTodo = () => {
         if (description != '' && assigned != '') {
             propz.addTodo(description, assigned);
+            setDescription('');
+            setAssigned('');
         }
     }
 
