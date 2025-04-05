@@ -47,7 +47,7 @@ function App() {
 
           <TodoTable todos={todos} deleteTodo={deleteTodo}/>
           <button className='btn btn-primary' onClick={() => setShowAddTodoForm(!showAddTodoForm)}>
-            New Todo
+            {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
           </button>
           {showAddTodoForm &&
             <NewTodoForm addTodo={addTodo}/>
