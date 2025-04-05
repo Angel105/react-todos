@@ -18,6 +18,7 @@ function TodoTable(propz) {
                         rowNumber={todo.rowNumber}
                         rowDescription={todo.rowDescription}
                         rowAssigned={todo.rowAssigned}
+                        deleteTodo={propz.deleteTodo}
                     />
                 ))}
             </tbody>
