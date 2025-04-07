@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoRowItem from './TodoRowItem';
+import { TodoRowItem }  from './TodoRowItem';
 
 function TodoTable(propz: {todos: TodoModel[], deleteTodo: Function }) {
     
