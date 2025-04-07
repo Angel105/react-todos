@@ -3,7 +3,7 @@ import './App.css';
 import {TodoTable} from './components/TodoTable';
 import {NewTodoForm} from './components/NewTodoForm';
 
-function App() {
+export const App = () => {
 
   const [showAddTodoForm, setShowAddTodoForm] = useState(false);
 
@@ -58,5 +58,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
