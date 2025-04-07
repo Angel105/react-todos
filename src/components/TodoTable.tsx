@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoRowItem from './TodoRowItem';
 
-function TodoTable(propz) {
+function TodoTable(propz: {todos: TodoModel[], deleteTodo: Function }) {
     
     return (
         <table className="table table-hover" >
@@ -27,4 +27,4 @@ function TodoTable(propz) {
     )
 }
 
-export default TodoTable
+export default TodoTable;

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function NewTodoForm(propz) {
+function NewTodoForm(propz: {addTodo: Function}) {
 
     const [description, setDescription] = useState('');
     const [assigned, setAssigned] = useState('');
@@ -46,4 +46,4 @@ function NewTodoForm(propz) {
     )
 }
 
-export default NewTodoForm
+export default NewTodoForm;
